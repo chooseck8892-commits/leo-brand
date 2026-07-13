@@ -140,22 +140,33 @@ html.nojs .kpi .br{width:var(--w);transition:none}
 .ptable td b{color:var(--navy)}
 .ptable td .g{color:var(--gold2);font-weight:700}
 .ptable tr:hover td{background:#FBF9F4}
-/* coo track record */
-.coogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:4px}
-@media(max-width:820px){.coogrid{grid-template-columns:1fr}}
-.coocol{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}
-.coocol h5{color:var(--navy);font-size:16px;margin-bottom:12px;letter-spacing:.04em}
-.coocol h5 span{display:block;color:var(--gold);font-size:11px;letter-spacing:.2em;font-weight:700;margin-bottom:2px}
-.exlist{list-style:none}
-.exlist li{position:relative;padding:9px 0 9px 20px;border-bottom:1px dotted var(--line);font-size:13.5px;color:var(--ink2);line-height:1.7}
-.exlist li:last-child{border-bottom:none}
-.exlist li:before{content:'';position:absolute;left:2px;top:16px;width:8px;height:8px;background:var(--gold);border-radius:2px}
-.exlist li b{display:block;color:var(--navy);font-size:14px}
-.inrow{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 0;border-bottom:1px dotted var(--line);align-items:start}
-.inrow:last-child{border-bottom:none}
-.inrow .tagz{background:var(--navy);color:var(--gold);font-size:12px;font-weight:700;text-align:center;border-radius:3px;padding:3px 0;margin-top:2px;letter-spacing:.1em}
-.inrow p{font-size:13.5px;color:var(--ink2);line-height:1.7}
-.inrow p b{color:var(--navy)}
+/* coo transformation architecture */
+.cooflow{margin-top:8px}
+.coohub{background:var(--navy);border-radius:8px;padding:22px 24px;text-align:center;color:#fff;border-bottom:3px solid var(--gold)}
+.coohub .k{color:var(--gold);font-size:11px;letter-spacing:.28em;font-weight:700;margin-bottom:6px}
+.coohub h5{font-size:19px;letter-spacing:.06em;margin-bottom:10px;font-weight:700}
+.coohub .chipz{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.coohub .chipz span{border:1px solid rgba(201,162,39,.55);color:#E8DFC0;font-size:12px;padding:3px 12px;border-radius:99px;letter-spacing:.08em}
+.coobr{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.coobr>div{display:flex;flex-direction:column}
+.coostem{display:flex;flex-direction:column;align-items:center}
+.coostem .lbl{background:#fff;border:1px solid var(--line);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:.1em;padding:4px 14px;border-radius:99px;margin:4px 0}
+.coostem .ln{width:2px;height:13px;background:var(--gold)}
+.coostem .ar{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--gold)}
+.coobox{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:6px;padding:18px 20px;flex:1}
+.coobox h6{color:var(--navy);font-size:15px;margin-bottom:10px;letter-spacing:.04em}
+.coobox h6 span{display:block;color:var(--gold);font-size:11px;letter-spacing:.2em;font-weight:700;margin-bottom:2px}
+.exgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.exgrid .it{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:4px;padding:8px 10px;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.exgrid .it b{display:block;color:var(--navy);font-size:13px}
+.inln{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:8px 0;border-bottom:1px dotted var(--line);align-items:start}
+.inln:last-child{border-bottom:none}
+.inln .tg{background:var(--navy);color:var(--gold);font-size:12px;font-weight:700;text-align:center;border-radius:3px;padding:3px 0;letter-spacing:.1em;margin-top:2px}
+.inln p{font-size:13px;color:var(--ink2);line-height:1.65}
+.inln p b{color:var(--navy)}
+.cooout{background:#fff;border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:6px;padding:14px 20px;text-align:center}
+.cooout b{color:var(--navy);font-size:15px;letter-spacing:.05em}
+.cooout p{color:var(--ink2);font-size:13px;margin-top:3px}
 /* roadmap */
 .rmap .ev p{font-size:13.5px}
 .year{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:2px 14px;border-radius:20px;font-size:14px;margin:6px 0 14px}
@@ -189,6 +200,7 @@ footer{background:#0A1826;color:#9FB2C4;text-align:center;padding:30px 22px;font
 footer a{color:var(--gold);text-decoration:none;font-weight:700}
 .quoteq{border-left:3px solid var(--gold);background:#fff;padding:14px 22px;font-family:'Noto Serif TC',serif;font-size:16.5px;color:var(--navy);line-height:1.9;margin-top:26px;border-radius:0 6px 6px 0}
 #toTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);border:none;font-size:20px;font-weight:700;cursor:pointer;display:none;z-index:60;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+@media(max-width:860px){.coobr{grid-template-columns:1fr}.exgrid{grid-template-columns:1fr}.coostem .lbl{font-size:11px}}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
@@ -385,24 +397,42 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
     <h2 class="sec reveal">正久電機廠・營運長實績</h2>
     <div class="secline reveal"></div>
     <p class="reveal" style="max-width:840px;color:var(--ink2);margin-bottom:22px">在傳統電機製造現場的具體作為——一手向外承接政府資源與大廠標準，一手向內重建制度與數位基礎，讓轉型同時有外部背書與內部軌跡。</p>
-    <div class="coogrid">
-      <div class="coocol reveal">
-        <h5><span>EXTERNAL PROGRAMS</span>外部申請與資源導入</h5>
-        <ul class="exlist">
-          <li><b>ISO 9001:2015 品質管理系統認證</b>主導制度文件化與驗證審查，帶領公司通過認證，管理制度取得國際標準背書。</li>
-          <li><b>經濟部 中小微企業碳健檢</b>完成碳健檢申請與盤查作業，建立公司減碳基線，為低碳轉型與供應鏈要求預作準備。</li>
-          <li><b>勞動部 小型企業人力提升計畫（115 年度）</b>申請導入政府訓練資源，將年度教育訓練接軌 TTQS 訓練品質方法，人才養成制度化。</li>
-          <li><b>勞動部 中高齡者職務再設計</b>申請職務再設計資源，改善工作環境與工具配置，活化資深人力並打造友善職場。</li>
-          <li><b>Social CRM×AI 客服導入（Oakmega）</b>導入社群 CRM 與 AI 客服，串接 Line 官方帳號，把客戶服務與名單經營自動化。</li>
-          <li><b>面板大廠供應商資質評估</b>主導供應商資格申請與合作計劃書提案，讓公司品質與交期管理接軌大廠稽核標準。</li>
-        </ul>
+    <div class="cooflow">
+      <div class="coohub reveal">
+        <div class="k">TRANSFORMATION HUB</div>
+        <h5>營運長 COO・企業轉型指揮中樞</h5>
+        <div class="chipz"><span>經營者視角</span><span>稽核基因</span><span>跨域落地力</span></div>
       </div>
-      <div class="coocol reveal">
-        <h5><span>INTERNAL TRANSFORMATION</span>內部轉型：四戰線×四大雲端系統</h5>
-        <div class="inrow"><div class="tagz">制度</div><p><b>內控稽核與 SOP 體系</b>——採購庫存×財務成本內控稽核、權責 SOP 教戰手冊、合約風險審查，讓管理有依據、稽核有軌跡。</p></div>
-        <div class="inrow"><div class="tagz">數位</div><p><b>四大雲端管理系統</b>——ERP 倉管物料、維修效率、CRM 客戶關係、業務訂單進度全面雲端化；輔以 Excel 自動化報表與企業資料庫×AI 客服。</p></div>
-        <div class="inrow"><div class="tagz">營運</div><p><b>產銷×人才雙引擎</b>——產銷協調與供應鏈管理；部門績效導入滾動式 SMART 目標，建立招募面試、留才激勵與經銷商教育訓練制度。</p></div>
-        <div class="inrow"><div class="tagz">發展</div><p><b>據點與新產業布局</b>——主導台北分公司設立與營運；拓展太陽能、環衛、營造等應用市場，布局 IoT 遠端監控×AI 預測維護的技術路線。</p></div>
+      <div class="coobr">
+        <div>
+          <div class="coostem reveal"><div class="ln"></div><div class="lbl">向外承接｜政府資源 × 大廠標準</div><div class="ln"></div><div class="ar"></div></div>
+          <div class="coobox reveal">
+            <h6><span>EXTERNAL PROGRAMS</span>外部申請與資源導入</h6>
+            <div class="exgrid">
+              <div class="it"><b>ISO 9001:2015 認證</b>主導制度文件化與驗證審查，管理制度取得國際標準背書。</div>
+              <div class="it"><b>經濟部 中小微企業碳健檢</b>完成盤查、建立減碳基線，為供應鏈低碳要求預作準備。</div>
+              <div class="it"><b>勞動部 人力提升計畫（115 年度）</b>導入政府訓練資源，教育訓練接軌 TTQS 品質方法。</div>
+              <div class="it"><b>勞動部 中高齡者職務再設計</b>改善工作環境與工具配置，活化資深人力。</div>
+              <div class="it"><b>Social CRM × AI 客服導入</b>串接 Line 官方帳號，客戶服務與名單經營自動化。</div>
+              <div class="it"><b>面板大廠供應商資質評估</b>品質與交期管理接軌大廠稽核標準。</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="coostem reveal"><div class="ln"></div><div class="lbl">向內重建｜制度 × 數位基礎</div><div class="ln"></div><div class="ar"></div></div>
+          <div class="coobox reveal">
+            <h6><span>INTERNAL TRANSFORMATION</span>內部轉型：四戰線 × 四大雲端系統</h6>
+            <div class="inln"><div class="tg">制度</div><p><b>內控稽核與 SOP 體系</b>——採購庫存×財務成本內控稽核、權責 SOP 教戰手冊、合約風險審查。</p></div>
+            <div class="inln"><div class="tg">數位</div><p><b>四大雲端管理系統</b>——ERP 倉管物料、維修效率、CRM 客戶關係、業務訂單進度全面雲端化；輔以 Excel 自動化報表與企業資料庫×AI 客服。</p></div>
+            <div class="inln"><div class="tg">營運</div><p><b>產銷×人才雙引擎</b>——產銷協調與供應鏈管理；滾動式 SMART 目標、招募留才與經銷商教育訓練制度。</p></div>
+            <div class="inln"><div class="tg">發展</div><p><b>據點與新產業布局</b>——台北分公司設立與營運；拓展太陽能、環衛、營造市場，布局 IoT 遠端監控×AI 預測維護。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="coostem reveal"><div class="ln" style="height:18px"></div><div class="ar"></div></div>
+      <div class="cooout reveal">
+        <b>外部背書 × 內部軌跡</b>
+        <p>讓轉型同時被市場看見、被制度驗證，累積成企業看得見的營運優勢。</p>
       </div>
     </div>
   </div>
