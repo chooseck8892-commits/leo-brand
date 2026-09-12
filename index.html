@@ -949,7 +949,10 @@ var JS=document.documentElement.classList.contains('js');
     el.classList.add('rlw');el.innerHTML='<i class="rl">'+el.innerHTML+'</i>';
   });
  }
- requestAnimationFrame(function(){requestAnimationFrame(function(){h.classList.add('fxon')})});
+ function go(){h.classList.add('fxon')}
+ if(document.visibilityState==='hidden'){
+  document.addEventListener('visibilitychange',function f(){if(!document.hidden){document.removeEventListener('visibilitychange',f);setTimeout(go,90)}});
+ }else{requestAnimationFrame(function(){requestAnimationFrame(go)});setTimeout(go,500);}
 })();
 
 /* ---- scrub helper ---- */
